@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            color: rgb(158, 92, 12);
+        }
+        button{
+            padding: 20px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a Demonstration Page</h1>
+    <h3 id="Welcome">Welcome to this page!!</h3>
+    <button id="sub">Exit</button>
+</body>
+</html>
+<script>
+    // console.log("Hello")
+    var greet = document.getElementById("Welcome")
+    // console.log(greet)
+    var bttn=document.getElementById("sub")
+    bttn.addEventListener("click",handleClick)
+    var flag=false
+
+    function handleClick(){
+        // alert("Button is clicked...")
+        flag=!flag
+        if(flag){
+
+            greet.innerText="Thanks for Visiting.... Visit Again!!😭"
+            greet.style.color="red"
+            bttn.innerText="Welcome"
+        }else{
+            greet.innerText="Welcome to this Page!!🙂"
+            greet.style.color="brown"
+            bttn.innerText="Exit"           
+        }
+    }
+</script>
