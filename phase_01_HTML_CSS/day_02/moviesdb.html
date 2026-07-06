@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movie Database</title>
     <link rel="stylesheet" href="moviesdb.css">
 </head>
 <body>
+
 <div id="container">
 
     <!-- Form Section -->
@@ -15,18 +16,13 @@
         <form id="movie-form">
 
             <div>
+                <label for="url">Image Url</label>
+                <input type="text" id="url" placeholder="Enter image url">
+            </div>
+
+            <div>
                 <label for="title">Movie Title</label>
                 <input type="text" id="title" placeholder="Enter movie title">
-            </div>
-
-            <div>
-                <label for="genre">Genre</label>
-                <input type="text" id="genre" placeholder="Enter genre">
-            </div>
-
-            <div>
-                <label for="year">Release Year</label>
-                <input type="number" id="year" placeholder="Enter release year">
             </div>
 
             <div>
@@ -35,29 +31,19 @@
             </div>
 
             <div>
-                <button type="submit">Add Movie</button>
+                <button id="submit" type="submit">Submit</button>
             </div>
 
         </form>
 
     </div>
 
-    <!-- Movie Cards Section -->
-    <!-- <div id="movie-cards-container">
-
-        <div class="movie-card">
-            <h3>Movie Title</h3>
-            <p>Genre</p>
-            <p>Release Year</p>
-            <p>Rating</p>
-            <button>Edit</button>
-            <button>Delete</button>
-        </div>
-
-        <!-- More movie cards will be added here -->
-
-    <!-- </div> --> 
+    <!-- Movie Cards -->
+    <div id="movieCards"></div>
 
 </div>
+
+<script src="moviesdb.js"></script>
+
 </body>
 </html>
