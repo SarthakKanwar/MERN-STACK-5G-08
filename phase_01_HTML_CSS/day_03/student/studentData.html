@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="studentdata.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="form-box">
+
+            <form id="studentForm">
+
+                <div class="input-group">
+                    <label>Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Age:</label>
+                    <input type="number" id="age" required>
+                </div>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+
+        <h1>Students Data</h1>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="tableBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+<script src="student.js"></script>
+
+</body>
+</html>
