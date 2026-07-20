@@ -104,8 +104,8 @@ console.log(z) //0
 
 // // Ternary Operator 
 
-// let user="Hello";
-// console.log(user=="Hello" ? "Present": "Anonymus");
+let user="Hello";
+console.log(user=="Hello" ? "Present": "Anonymus");
 
 // let obj ={
 //     name:"Aman",
