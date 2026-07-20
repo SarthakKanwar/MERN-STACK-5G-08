@@ -2,22 +2,22 @@
 // A function which is passed as an argument is called Callback Function 
 
 
-//Normal Function
-// function greetMessage(){
-//     console.log("Welcome to Chitkara")
-// }
-// greetMessage()
+// Normal Function
+function greetMessage(){
+    console.log("Welcome to Chitkara")
+}
+greetMessage()
 
 
-// function greetMessage(callback){
-//     console.log("Welcome to Chitkara")
-//     callback()
-// }
+function greetMessage(callback){
+    console.log("Welcome to Chitkara")
+    callback()
+}
 
-// function callback(){
-//     console.log("Good Morning")
-// }
-// greetMessage(callback)
+function callback(){
+    console.log("Good Morning")
+}
+greetMessage(callback)
 
 
 // blinkit--> payment,order pack ,deliver
