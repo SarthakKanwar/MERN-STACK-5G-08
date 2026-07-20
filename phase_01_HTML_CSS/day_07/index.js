@@ -38,7 +38,6 @@ arr2.push(5)
 console.log(arr1)
 console.log(arr2)
 
-
 // npm -node package manager  
 
  
