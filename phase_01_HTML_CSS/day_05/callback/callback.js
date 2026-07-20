@@ -20,7 +20,7 @@ function callback(){
 greetMessage(callback)
 
 
-// blinkit--> payment,order pack ,deliver
+// blinkit --> payment,order pack ,deliver
 
 
 function makePayment(packOrder){
