@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin-top: 100px;
+        text-align: center;
+        font: sans-serif;
+    }
+    
+</style>
+<body>
+    <h2>Even Odd Checker</h2>
+    <input type="number" id="number" placeholder="Enter a number">
+    <button onclick="clickFunction()">Check</button>
+    <h3 id="result"></h3>
+    
+</body>
+</html>
+<script>
+    function clickFunction(){
+    let number=Number(document.getElementById("number").value);
+    let result=document.getElementById("result");
+    if(number %2==0){
+        result.innerText="Even Number"
+        result.style.color="blue";
+    }else{
+        result.innerText="Odd Number";
+        result.style.color="Red";
+    }
+    document.getElementById("number").value=""
+}
+
+</script>
+
+ 

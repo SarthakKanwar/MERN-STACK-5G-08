@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Checker</title>
+
+    <style>
+        body{
+            text-align: center;
+            margin-top: 100px;
+            font: sans-serif;
+        }
+
+        input{
+            padding: 10px;
+            width: 200px;
+        }
+
+        button{
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        p{
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Age Checker</h2>
+
+    <input type="number" id="age" placeholder="Enter your age">
+
+    <button onclick="checkAge()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function checkAge(){
+
+            let age = Number(document.getElementById("age").value);
+            let result = document.getElementById("result");
+
+            if(age >= 18){
+
+                result.innerText = "✅ You can vote";
+                result.style.color = "green";
+
+            }
+            else{
+
+                result.innerText = "❌ You are not eligible";
+                result.style.color = "red";
+
+            }
+            document.getElementById("age").value="";
+
+            setInterval(function(){
+                document.getElementById("result").innerText="";
+                
+            },4000)
+
+        }
+
+    </script>
+
+</body>
+</html>
